@@ -1,0 +1,8 @@
+#tower of honai problem using recursion
+def TOH(n,a,b,c):
+    if n>0:
+        TOH(n-1,a,c,b)
+        print((a,c))
+        TOH(n-1,b,a,c)
+if __name__ == '__main__':
+    TOH(3,1,2,3)            
